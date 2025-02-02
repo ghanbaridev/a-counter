@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://unpkg.com/@primer/css@16.3.0/dist/primer.css">
@@ -13,14 +13,14 @@
 
 <body>
     <!-- Side navigation -->
-    <div class="sidenav  " style="justify-content: space-between; display: grid;">
+    <div class="sidenav ">
         <div style="justify-content: end; display: grid;">
-            <a href="./index.html" style="font-size: xx-large; font-weight: bold;">Home</a>
-            <a href="./about.html" style="font-size: xx-large; font-weight: bold;">About</a>
-            <a href="./client.html" style="font-size: xx-large; font-weight: bold;">Client</a>
-            <a href="./contact.html" style="font-size: xx-large; font-weight: bold;">contact</a>
+            <a href="./index.html" style="font-weight: bold; text-decoration: none;">Home</a>
+            <a href="./about.html" style=" font-weight: bold; text-decoration: none;">About</a>
+            <a href="./client.html" style=" font-weight: bold; text-decoration: none;">Client</a>
+            <a href="./contact.html" style=" font-weight: bold;text-decoration: none;">contact</a>
             <a href="https://github.com/ghanbaridev" class="fa fa-github" style="font-size:80px;
-    color:red ;text-decoration: none;"></a>
+        color:red ;text-decoration: none;"></a>
         </div>
 
 
@@ -32,19 +32,21 @@
     </div>
 
     <!-- Page content -->
-    <section style="display: grid;">
-        <div>
-            <h1 style="font-size: 50px ;font-weight: bold;">You Can contact me with:</h1>
-            <hr>
-        </div>
+    <div style="display: grid; justify-content: center;">
+
+        <h1 style=" font-weight: bold;">Contact me with:</h1>
+        <hr>
+
         <div>
             <ul>
 
                 <li>
                     <div style="display: flex;">
-                        <img src="./assests/email-svgrepo-com.svg" srcset="email svg" style="width: 40; height: 40px;">
+                        <img src="./assests/email-svgrepo-com.svg" srcset="email svg" style="width: 40; height: 40px; 
+                        
+                       ">
                         <div style="width:50px ;"></div>
-                        <a href="mailto:mohamad.ghanbariwork@gmail.com" style="font-size: 30px;">mohamad.ghanbariwork@gmail.com</a>
+                        <a href="mailto:mohamad.ghanbariwork@gmail.com" style="font-size:30px; overflow: auto;">mohamad.ghanbariwork@gmail.com</a>
 
                     </div>
 
@@ -52,16 +54,16 @@
 
             </ul>
 
+            <div style="height: 50px;"></div>
 
-
-            <h2 style="font-size: 35px;">or you can check my githubpage</h2>
+            <h2>or you can check my githubpage</h2>
         </div>
-    </section>
+    </div>
 
 
 
 
-    <script src="./index.js"></script>
+
 </body>
 
 </html>
