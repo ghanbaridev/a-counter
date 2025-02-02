@@ -1,21 +1,21 @@
 body {
     font-family: Arial, sans-serif;
     background-color: whitesmoke;
-    display: flex;
     justify-content: center;
+    display: flex;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
 
-ul {
-    list-style: none;
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 2em;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    div {
-        width: 400px;
-    }
+ul {
+    list-style: none;
 }
 
 .container {
@@ -28,6 +28,15 @@ ul {
 
 h1 {
     margin-bottom: 20px;
+    font-size: 10vw;
+}
+
+a {
+    font-size: 10vw;
+}
+
+p {
+    font-size: 5vw;
 }
 
 .counter {
@@ -73,7 +82,7 @@ h1 {
 .sidenav {
     height: 100%;
     /* Full-height: remove this if you want "auto" height */
-    width: 160px;
+    width: 138px;
     /* Set the width of the sidebar */
     position: fixed;
     /* Fixed Sidebar (stay in place on scroll) */
@@ -84,9 +93,23 @@ h1 {
     left: 0;
     background-color: #111;
     /* Black */
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
     padding-top: 20px;
+    justify-content: space-between;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+div.content {
+    margin-left: 160px;
+    padding: 1px 16px;
+    height: 1000px;
 }
 
 
@@ -114,36 +137,6 @@ h1 {
     margin-left: 160px;
     /* Same as the width of the sidebar */
     padding: 0px 10px;
-}
-
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-    .sidenav a {
-        font-size: 18px;
-    }
-}
-
-
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-
-@media screen and (min-width: 601px) {
-    div.example {
-        font-size: 80px;
-    }
-}
-
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-
-@media screen and (max-width: 600px) {
-    div.example {
-        font-size: 30px;
-    }
 }
 
 @media screen and (max-width: 700px) {
