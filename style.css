@@ -169,7 +169,8 @@ div.content {
     right: 50px;
     bottom: 60px;
     border-radius: 12px;
-    background-color: gray;
+    background-color: lightblue;
+
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-size: x-large;
     font-weight: bold;
@@ -179,6 +180,9 @@ div.content {
 
 .floating-right-bottom-btn:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.myClickable {
+    cursor: pointer;
 }
 
 
@@ -191,6 +195,6 @@ div.content {
         color: white;
     }
     #btnSwitch {
-        background-color: #a50101eb;
+        background-color: rgba(245, 245, 245, 0.863);
     }
 }
